@@ -4,8 +4,6 @@
 #define VCOM 16
 IT8951_Dev_Info devInfo = {0, 0};
 UDOUBLE Init_Target_Memory_Addr;
-UWORD A2_Mode = 6;
-extern UBYTE *Refresh_Frame_Buf;
 
 void ext_IT8951_init() {
     DEV_Module_Init();
