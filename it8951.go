@@ -1,9 +1,9 @@
 package config
 
 // #cgo LDFLAGS: -lbcm2835 -lm -lrt -lpthread
-// #include "DEV_Config.h"
+// #include "IT8951.h"
 import "C"
 
 func Init() {
-	C.DEV_Module_Init()
+	C.ext_IT8951_init()
 }
