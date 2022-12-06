@@ -1,7 +1,7 @@
 #ifndef IT8951_H
 #define IT8951_H
 
-#include "./Config/DEV_Config.h"
+#include "DEV_Config.h"
 
 void ext_IT8951_init();
 UWORD ext_IT8951_width();
