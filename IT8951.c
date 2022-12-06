@@ -1,5 +1,5 @@
 #include "IT8951.h"
-#include "./e-Paper/EPD_IT8951.h"
+#include "EPD_IT8951.h"
 
 #define VCOM 16
 IT8951_Dev_Info devInfo = {0, 0};
