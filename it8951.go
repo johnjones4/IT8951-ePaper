@@ -15,3 +15,7 @@ func Width() int {
 func Height() int {
 	return int(C.ext_IT8951_height())
 }
+
+func Draw(b []byte) {
+	C.ext_IT8951_draw(b)
+}
