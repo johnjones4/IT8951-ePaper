@@ -6,6 +6,6 @@
 void ext_IT8951_init();
 UWORD ext_IT8951_width();
 UWORD ext_IT8951_height();
-void ext_IT8951_draw(UBYTE* image);
+void ext_IT8951_draw(char* image);
 
 #endif

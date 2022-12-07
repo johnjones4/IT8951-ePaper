@@ -2,7 +2,9 @@ package it8951
 
 // #cgo LDFLAGS: -lbcm2835 -lm -lrt -lpthread
 // #include "IT8951.h"
+// #include <stdlib.h>
 import "C"
+import "unsafe"
 
 func Init() {
 	C.ext_IT8951_init()
@@ -17,5 +19,7 @@ func Height() int {
 }
 
 func Draw(b []byte) {
-	C.ext_IT8951_draw(b)
+	a := C.CString(string(b))
+	C.ext_IT8951_draw(a)
+	C.free(unsafe.Pointer(a))
 }

@@ -20,6 +20,6 @@ UWORD ext_IT8951_height() {
     return devInfo.Panel_W;
 }
 
-void ext_IT8951_draw(UBYTE* image) {
+void ext_IT8951_draw(char* image) {
     EPD_IT8951_4bp_Refresh(image, 0, 0, devInfo.Panel_W, devInfo.Panel_W, false, Init_Target_Memory_Addr,false);
 }
