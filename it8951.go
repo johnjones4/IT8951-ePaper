@@ -7,3 +7,11 @@ import "C"
 func Init() {
 	C.ext_IT8951_init()
 }
+
+func Width() int {
+	return int(C.ext_IT8951_width())
+}
+
+func Height() int {
+	return int(C.ext_IT8951_height())
+}
